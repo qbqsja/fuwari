@@ -11,13 +11,15 @@ export const siteConfig: SiteConfig = {
 	title: "xixida",
 	subtitle: "欢迎来到我的博客", // 副标题
 	lang: "zh_CN", 
+	// 1. 这里填入你自己的网址，解决版权声明里的链接问题 👇
+	url: "https://www.758455.xyz/", 
 	themeColor: {
-		hue: 350, // 粉紫色系，非常适合二次元主题
+		hue: 350, // 粉紫色系
 		fixed: false, 
 	},
 	banner: {
+		// 2. 如果你想彻底关掉博客顶部的大图，把这里改为 false
 		enable: true, 
-		// 这里帮你换成了高清随机动漫壁纸 API，每次刷新都有惊喜
 		src: "https://api.paugram.com/wallpaper/", 
 		position: "center",
 		credit: {
@@ -30,7 +32,14 @@ export const siteConfig: SiteConfig = {
 		enable: true,
 		depth: 2,
 	},
-	favicon: [],
+	// 3. 建议至少留一个默认图标，否则浏览器标签页是空白的
+	favicon: [
+		{
+			src: '/favicon/icon.png',
+			theme: 'light',
+			sizes: '32x32',
+		}
+	],
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -47,7 +56,6 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	// 你的 QQ 头像
 	avatar: "https://q1.qlogo.cn/g?b=qq&nk=2040643421&s=640", 
 	name: "xixida", 
 	bio: "如果你在看我，那我们就已经是好朋友了 (๑•̀ㅂ•́)و✧", 
@@ -57,6 +65,7 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/qbqsja", 
 		},
+		// 你也可以在这里加上你的 QQ 链接，方便别人找你
 	],
 };
 
