@@ -20,11 +20,15 @@ let links: NavBarLink[] = navBarConfig.links.map(
 	},
 );
 ---
-<div id="navbar" class="z-50 onload-animation">
-    <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <!-- used for onload animation -->
-    <div class:list={[
+<div id="navbar" class="z-50 onload-animation sticky top-0 transition-all duration-300">
+    <div class="absolute h-8 left-0 right-0 -top-8 bg-[var(--card-bg)] transition"></div> <div class:list={[
         className,
-        "card-base !overflow-visible max-w-[var(--page-width)] h-[4.5rem] !rounded-t-none mx-auto flex items-center justify-between px-4"]}>
+        "max-w-[var(--page-width)] h-[4.5rem] !rounded-t-none mx-auto flex items-center justify-between px-4",
+        "bg-white/60 dark:bg-zinc-900/60", // 半透明背景
+        "backdrop-blur-lg saturate-150",   // 磨砂模糊效果与饱和度提升
+        "border-x border-b border-black/5 dark:border-white/10", // 极细边框勾勒边缘
+        "!overflow-visible transition-all"
+    ]}>
         <a href={url('/')} class="btn-plain scale-animation rounded-lg h-[3.25rem] px-5 font-bold active:scale-95">
             <div class="flex flex-row text-[var(--primary)] items-center text-md">
                 <Icon name="material-symbols:home-outline-rounded" class="text-[1.75rem] mb-1 mr-2" />
@@ -34,7 +38,7 @@ let links: NavBarLink[] = navBarConfig.links.map(
         <div class="hidden md:flex">
             {links.map((l) => {
                 return <a aria-label={l.name} href={l.external ? l.url : url(l.url)} target={l.external ? "_blank" : null}
-                          class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95"
+                          class="btn-plain scale-animation rounded-lg h-11 font-bold px-5 active:scale-95 text-[var(--text-main)]"
                 >
                     <div class="flex items-center">
                         {l.name}
@@ -44,7 +48,6 @@ let links: NavBarLink[] = navBarConfig.links.map(
             })}
         </div>
         <div class="flex">
-            <!--<SearchPanel client:load>-->
             <Search client:only="svelte"></Search>
             {!siteConfig.themeColor.fixed && (
                     <button aria-label="Display Settings" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90" id="display-settings-switch">
