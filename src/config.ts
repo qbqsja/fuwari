@@ -53,11 +53,6 @@ export const profileConfig: ProfileConfig = {
 	bio: "如果你在看我，那我们就已经是好朋友了 (๑•̀ㅂ•́)و✧", 
 	links: [
 		{
-			name: "QQ",
-			icon: "fa6-solid:message", 
-			url: "http://wpa.qq.com/msgrd?v=3&uin=2040643421&site=qq&menu=yes", // 优化了唤起 QQ 的链接
-		},
-		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/qbqsja", 
