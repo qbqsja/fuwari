@@ -9,16 +9,15 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "xixida",
-	subtitle: "欢迎来到我的博客", // 副标题
+	subtitle: "欢迎来到我的博客", 
 	lang: "zh_CN", 
-	// 1. 这里填入你自己的网址，解决版权声明里的链接问题 👇
-	url: "https://www.758455.xyz/", 
+	// 确认是你的新域名
+	url: "https://www.758455.xyz", 
 	themeColor: {
-		hue: 350, // 粉紫色系
+		hue: 350, 
 		fixed: false, 
 	},
 	banner: {
-		// 2. 如果你想彻底关掉博客顶部的大图，把这里改为 false
 		enable: true, 
 		src: "https://api.paugram.com/wallpaper/", 
 		position: "center",
@@ -32,7 +31,6 @@ export const siteConfig: SiteConfig = {
 		enable: true,
 		depth: 2,
 	},
-	// 3. 建议至少留一个默认图标，否则浏览器标签页是空白的
 	favicon: [
 		{
 			src: '/favicon/icon.png',
@@ -65,12 +63,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/qbqsja", 
 		},
-		// 你也可以在这里加上你的 QQ 链接，方便别人找你
 	],
 };
 
 export const licenseConfig: LicenseConfig = {
-	enable: true,
+	enable: true, // 如果你想彻底隐藏那个带链接的卡片，把这里改成 false
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
