@@ -63,12 +63,7 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/qbqsja", 
 		},
-		// --- 在下面单独增加你的朋友 ---
-		{
-			name: "我的朋友",
-			icon: "fa6-solid:user-group", // 这是一个“朋友”图标
-			url: "https://www.google.com", // 这里填你朋友的博客地址
-		},
+		
 	],
 };
 
