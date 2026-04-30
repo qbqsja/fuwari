@@ -9,15 +9,16 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "xixida",
-	subtitle: "欢迎来到我的个人博客", // 这里可以改你的副标题
-	lang: "zh_CN", // 已改为中文
+	subtitle: "欢迎来到我的动漫据点", // 副标题
+	lang: "zh_CN", 
 	themeColor: {
-		hue: 350, // 改为了粉紫色（更符合动漫风），喜欢蓝色可以改回 250
+		hue: 350, // 粉紫色系，非常适合二次元主题
 		fixed: false, 
 	},
 	banner: {
-		enable: true, // 开启了顶部大图
-		src: "https://api.dujin.org/bing/1366.php", // 使用了必应每日美图，每次打开都不同
+		enable: true, 
+		// 这里帮你换成了高清随机动漫壁纸 API，每次刷新都有惊喜
+		src: "https://api.paugram.com/wallpaper/", 
 		position: "center",
 		credit: {
 			enable: false,
@@ -39,26 +40,27 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/qbqsja/fuwari", // 建议改为你自己的 GitHub 地址
+			url: "https://github.com/qbqsja/fuwari", 
 			external: true,
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q1.qlogo.cn/g?b=qq&nk=2040643421&s=640", // 你的 QQ 头像已上线
-	name: "xixida", // 这里的名字显示在头像下方
-	bio: "记录生活，分享快乐", // 你的个性签名
+	// 你的 QQ 头像
+	avatar: "https://q1.qlogo.cn/g?b=qq&nk=2040643421&s=640", 
+	name: "xixida", 
+	bio: "如果你在看我，那我们就已经是好朋友了 (๑•̀ㅂ•́)و✧", 
 	links: [
 		{
 			name: "QQ",
-			icon: "fa6-solid:message", // 换成了消息图标
-			url: "tencent://message/?uin=2040643421", // 点击可以直接唤起 QQ 聊天
+			icon: "fa6-solid:message", 
+			url: "http://wpa.qq.com/msgrd?v=3&uin=2040643421&site=qq&menu=yes", // 优化了唤起 QQ 的链接
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/qbqsja", // 改为你自己的 GitHub 地址
+			url: "https://github.com/qbqsja", 
 		},
 	],
 };
