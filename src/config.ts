@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "xixida",
-	subtitle: "欢迎来到我的动漫据点", // 副标题
+	subtitle: "欢迎来到我的博客", // 副标题
 	lang: "zh_CN", 
 	themeColor: {
 		hue: 350, // 粉紫色系，非常适合二次元主题
