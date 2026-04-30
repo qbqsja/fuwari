@@ -67,7 +67,7 @@ export const profileConfig: ProfileConfig = {
 };
 
 export const licenseConfig: LicenseConfig = {
-	enable: true, // 如果你想彻底隐藏那个带链接的卡片，把这里改成 false
+	enable: false, // 如果你想彻底隐藏那个带链接的卡片，把这里改成 false
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
