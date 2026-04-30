@@ -2,7 +2,7 @@
 title: 欢迎来到 xixida 的幻象空间！✨
 published: 2026-04-30
 description: '这是我的博客正式开通的第一天，记录一下心情。'
-image: 'https://api.paugram.com/wallpaper/'
+image: ''
 tags: [日常, 博客, 动漫]
 category: '杂谈'
 draft: false
